@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
@@ -7,14 +7,12 @@ body {
     margin: 0;
 }
 
-/* Style the navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #eee;
 }
 
-/* Style the header link */
-h1 {
+.logo {
     float: left;
     margin: 0;
     padding: 14px 16px;
@@ -24,7 +22,6 @@ h1 {
     text-align: center;
 }
 
-/* Style the unordered list */
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -34,13 +31,11 @@ h1 {
     margin-right: 150px;
 }
 
-/* Style the list items */
 .navbar li {
     float: left;
     padding-right: 4px;
 }
 
-/* Style the anchor links */
 .navbar a {
     display: block;
     color: black;
@@ -50,7 +45,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Change color on hover */
 .navbar a:hover {
     background-color: black;
     color: #eee;
@@ -59,4 +53,209 @@ h1 {
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
+} 
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+} */
+
+
+/* General Styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: #000;
+}
+
+/* Products Section */
+
+
+/* Cart Section */
+.cart {
+    padding: 2rem;
+}
+
+.cart-items {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-item h4 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cart-item p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.cart-item button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+}
+
+.cart-summary {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cart-summary p {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info a {
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+}
+
+.about-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-links li {
+    margin-right: 1rem;
+}
+
+.about-links a {
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Updated styling for product list items */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 300px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 15px;
+}
+
+.product .price {
+    font-weight: bold;
+    color: #f44336;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+    background-color: #0056b3;
 }
