@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEGO</title>
     <link rel="stylesheet" href="style/master.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="style/normalize.css">
+    <!-- Font Awesome Libaray -->
+    <link rel="stylesheet" href="style/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
         <a href="#home" class="logo">WEGO</a>
@@ -13,10 +25,25 @@
             <li><a href="#home">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="cart.html">Cart</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
         </ul>
+        <div class="social">
+            <a href="https://www.facebook.com/Walid3455"><i class="fa-brands fa-facebook face"></i></a>
+            <a href="https://twitter.com/walidashraf050"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://www.instagram.com/walid_ashraf0/"><i class="fa-brands fa-instagram insta"></i></a>
+            <a href="https://www.linkedin.com/in/walid-ashraf1/"><i class="fa-brands fa-linkedin linked"></i></a>
+        </div>
     </nav>
+
+    <!--Start Slider -->
+    <div class="landing">
+        <div class="intro-text">
+            <h1>Hello There!</h1>
+            <p>WE ARE ON THE E-COMMERCE WEBSITE</p>
+        </div>
+    </div>
 
     <!-- <section id="products" class="products">
         <h2>Our Products</h2>
@@ -108,10 +135,10 @@
         </div>
     </section> -->
 
-    <section id="cart" class="cart">
+    <!-- <section id="cart" class="cart">
         <h2>Your Cart</h2>
         <div class="cart-items">
-            </div>
+        </div>
         <div class="cart-summary">
             <p>Total: <span id="cart-total">0</span></p>
             <button>Checkout</button>
@@ -124,24 +151,56 @@
             <a href="tel:+201011053973"><i class="fas fa-phone"></i> +201011053973</a>
             <a href="mailto:walidashraf050@gmail.com"><i class="fas fa-envelope"></i> walidashraf050@gmail.com</a>
         </div>
-    </section>
+    </section> -->
 
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>WEGO is your one-stop shop for all your e-commerce needs. We offer a wide variety of products at competitive prices, and we're committed to providing our customers with the best possible shopping experience.</p>
-        <p>We're a team of passionate e-commerce professionals with a wealth of experience in the industry. We're dedicated to providing our customers with the best possible service, and we're always looking for ways to improve our products and services.</p>
-        <p>We believe that e-commerce should be easy and accessible to everyone. That's why we've created a user-friendly website that makes it easy to find what you're looking for and make a purchase. We also offer a variety of payment options to make it easy to checkout.</p>
-        <p>We hope you'll give us a try! We're confident that you'll be happy with our products, services, and prices.</p>
+        <div class="describtion">
+            <p>
+                <span class="logo">WEGO</span> is your one-stop shop for all your e-commerce needs. We offer a wide
+                variety of products at competitive
+                prices, and we're committed to providing our customers with the best possible shopping experience.
+                We're a team of passionate e-commerce professionals with a wealth of experience in the industry. We're
+                dedicated to providing our customers with the best possible service, and we're always looking for ways
+                to
+                improve our products and services.
+                We believe that e-commerce should be easy and accessible to everyone. That's why we've created a
+                user-friendly website that makes it easy to find what you're looking for and make a purchase. We also
+                offer
+                a variety of payment options to make it easy to checkout.
+                We hope you'll give us a try! We're confident that you'll be happy with our products, services, and
+                prices.
+            </p>
+        </div>
         <div class="about-links">
+            <span class="des">Useful Links:</span>
             <ul class="abo-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="cart.html">Cart</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
         </div>
     </section>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <h2 class="special-heading">Contact US</h2>
+            <div class="info">
+                <p class="label">Feel free to drop us a line at:</p>
+                <a href="mailto:walidashraf050@gmail.com?subject=Contact" class="link">Walidashraf050@gmail.com</a>
+                <div class="social">
+                    Find us on social networks:
+                    <a href="https://www.facebook.com/Walid3455"><i class="fa-brands fa-facebook face"></i></a>
+                    <a href="https://twitter.com/walidashraf050"><i class="fab fa-twitter twitter"></i></a>
+                    <a href="https://www.instagram.com/walid_ashraf0/"><i class="fa-brands fa-instagram insta"></i></a>
+                    <a href="https://www.linkedin.com/in/walid-ashraf1/"><i class="fa-brands fa-linkedin linked"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
         &copy; 2023 <span>WEGO</span> All Right Reserved
@@ -149,5 +208,5 @@
 
     <script src="main.js"></script>
 </body>
-</html>
 
+</html>
