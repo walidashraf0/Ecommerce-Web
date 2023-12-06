@@ -54,6 +54,7 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: 110px;
     position: relative;
 }
 
@@ -61,20 +62,6 @@ p {
     margin-right: 20px;
     /* position: relative; */
 }
-
-/* .nav-links li::after {
-    content: "";
-    position: absolute;
-    right: -8px;
-    height: 24px;
-    width: 1px;
-    background-color: gray;
-    transform: translateY(-8%);
-    -webkit-transform: translateY(-8%);
-    -moz-transform: translateY(-8%);
-    -ms-transform: translateY(-8%);
-    -o-transform: translateY(-8%);
-} */
 
 .nav-links a {
     color: #000;
