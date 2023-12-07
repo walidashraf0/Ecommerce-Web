@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/login.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="style/normalize.css">
+    <!-- Font Awesome Libaray -->
+    <link rel="stylesheet" href="style/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <nav class="navbar">
+        <a href="index.html" class="logo">WEGO</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="social">
+            <a href="https://www.facebook.com/Walid3455"><i class="fa-brands fa-facebook face"></i></a>
+            <a href="https://twitter.com/walidashraf050"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://www.instagram.com/walid_ashraf0/"><i class="fa-brands fa-instagram insta"></i></a>
+            <a href="https://www.linkedin.com/in/walid-ashraf1/"><i class="fa-brands fa-linkedin linked"></i></a>
+        </div>
+    </nav> -->
+
+    <header>
+        <h1>Login</h1>
+    </header>
+    <div class="container">
+        <div class="heading">Sign In</div>
+        <form action="" class="form">
+            <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+            <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+            <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
+            <input class="login-button" type="submit" value="Sign In" onclick="redirectToIndex()">
+
+        </form>
+        <div class="social-account-container">
+            <span class="title">Or Sign in with</span>
+            <div class="social-accounts">
+                <button class="social-button google">
+                    <i class="fa-brands fa-google"></i>
+                </button>
+                <button class="social-button apple">
+                    <i class="fa-brands fa-apple"></i>
+                </button>
+                <button class="social-button twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </button>
+            </div>
+        </div>
+        <span class="agreement"><a href="#">Learn user licence agreement</a></span>
+    </div>
+    <div class="footer">
+        &copy; 2023 <span>WEGO</span> All Right Reserved
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

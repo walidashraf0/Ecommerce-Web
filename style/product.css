@@ -69,10 +69,15 @@ p {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 4px;
+    transition: 0.3s;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -118,7 +123,7 @@ header {
 
 /* main */
 .container {
-    height: 919px;
+    width: 1800px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -127,10 +132,10 @@ header {
 
 main.products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -192,6 +197,51 @@ main.products-grid {
     font-weight: 700;
 }
 
+.card .counting {
+    margin: 15px 0 0 10px;
+    float: left;
+}
+
+.card .counting .carting {
+    display: block;
+}
+
+.card .counting .plus,
+.card .counting .minus {
+    font-size: 18px;
+    border: 2px solid var(--main-color);
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.card .counting .plus:hover,
+.card .counting .minus:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.card .counting .plus {
+    margin-right: 4px;
+}
+
+.card .counting .minus {
+    margin-left: 4px;
+}
+
+.card .counting .count {
+    font-size: 18px;
+}
+
 .card button {
     font-family: inherit;
     padding: 8px 12px;
@@ -204,6 +254,11 @@ main.products-grid {
     border: 2px solid var(--main-color);
     border-radius: 6px;
     position: relative;
+    transform: translate(20px ,50px);
+    -webkit-transform: translate(20px ,50px);
+    -moz-transform: translate(20px ,50px);
+    -ms-transform: translate(20px ,50px);
+    -o-transform: translate(20px ,50px);
 }
 
 .card button:hover {
