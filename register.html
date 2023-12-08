@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style/login.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="style/register.css">
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="style/normalize.css">
     <!-- Font Awesome Libaray -->
@@ -38,38 +38,48 @@
     </nav> -->
 
     <header>
-        <h1>Login</h1>
+        <h1>Create An Account</h1>
     </header>
     <div class="container">
-        <div class="heading">Sign In</div>
-        <form action="" class="form" onsubmit="validateForm(event)">
-            <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
-            <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
-            <span class="forgot-password"><a href="#">Forgot Password ?</a></span>
-            <input class="login-button" type="submit" value="Sign In">
-        </form>
-        
-        <div class="social-account-container">
-            <span class="title">Or Sign in with</span>
-            <div class="social-accounts">
-                <button class="social-button google">
-                    <i class="fa-brands fa-google"></i>
-                </button>
-                <button class="social-button apple">
-                    <i class="fa-brands fa-apple"></i>
-                </button>
-                <button class="social-button twitter">
-                    <i class="fa-brands fa-twitter"></i>
-                </button>
+        <form class="form" onsubmit="validateForm(event)">
+            <p class="title">Register</p>
+            <p class="message">Signup now and get full access to our app.</p>
+
+            <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input" id="firstName">
+                    <span>Firstname</span>
+                </label>
+
+                <label>
+                    <input required="" placeholder="" type="text" class="input" id="lastName">
+                    <span>Lastname</span>
+                </label>
             </div>
-        </div>
-        <span class="register">if You don't have account?<br><a href="register.html">Create Account.</a></span>
-        <span class="agreement"><a href="#">Learn user licence agreement</a></span>
+
+            <label>
+                <input required="" placeholder="" type="email" class="input" id="email">
+                <span>Email</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="password" class="input" id="password">
+                <span>Password</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="password" class="input" id="confirmPassword">
+                <span>Confirm password</span>
+            </label>
+
+            <button type="submit" class="submit">Submit</button>
+            <p class="signin">Already have an account? <a href="login.html">Sign in</a></p>
+        </form>
     </div>
+
     <div class="footer">
         &copy; 2023 <span>WEGO</span> All Right Reserved
     </div>
-    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>
