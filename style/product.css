@@ -145,7 +145,7 @@ main.products-grid {
     margin-left: auto;
     min-height: 370px;
     border-radius: 20px;
-    background: #e8e8e8;
+    background: #e8e8e86d;
     box-shadow: 5px 5px 6px #dadada,
         -5px -5px 6px #f6f6f6;
     transition: 0.4s;
@@ -168,12 +168,13 @@ main.products-grid {
     border-radius: 15px;
     box-shadow: inset 8px 8px 10px #c3c3c3,
         inset -8px -8px 10px #cfcfcf;
+    z-index: 1;
     position: relative;
 }
 
 .card-image img {
     position: absolute;
-    /* z-index: 2; */
+    z-index: -1;
     border-radius: 15px;
     min-width: 290px;
     min-height: 170px;
@@ -184,17 +185,6 @@ main.products-grid {
     margin: 13px 0 0 10px;
     color: rgb(31, 31, 31);
     font-size: 15px;
-}
-
-.card p.under {
-    float: right;
-    margin: 28px 0 0 18px;
-    font-size: 13px;
-    color: #636363;
-}
-
-.card .by-name {
-    font-weight: 700;
 }
 
 .card .counting {
@@ -273,9 +263,6 @@ main.products-grid {
     height: 200px;
     z-index: -1;
     border-radius: 50%;
-}
-
-.card button::before {
     top: 100%;
     left: 100%;
     transition: .3s all;

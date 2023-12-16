@@ -141,16 +141,16 @@ header {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
     position: relative;
-    background-color: var(--section-background);
-    height: 950px;
+    /* background-color: var(--section-background); */
+    height: 842px;
 }
 
 .pricing .container {
     margin-left: 750px;
-    margin-top: 40px;
+    margin-top: 101px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 40px;
+    gap: 60px;
 }
 
 .pricing .box {
@@ -228,12 +228,6 @@ header {
     letter-spacing: -1px;
 }
 
-.pricing .box img {
-    width: 80px;
-    margin-bottom: 30px;
-
-}
-
 .pricing .box .price {
     margin-bottom: 20px;
 }
@@ -252,6 +246,7 @@ header {
 
 .pricing .box ul {
     text-align: left;
+    list-style: none;
 }
 
 .pricing .box ul li {
@@ -262,7 +257,7 @@ header {
 .pricing .box ul li::before {
     content: '\f00c';
     font-family: "Font Awesome 5 Free";
-    margin-right: 10px;
+    margin-right: 6px;
     font-weight: 900;
     color: var(--main-color);
 }
@@ -292,7 +287,6 @@ header {
     color: white;
     border-color: #1787E0;
 }
-
 /* End Pricing */
 
 /* footer */

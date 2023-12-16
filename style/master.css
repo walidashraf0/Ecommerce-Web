@@ -87,24 +87,10 @@ p {
 
 .navbar .social {
     display: flex;
-    justify-content: center;
     font-size: 18px;
     margin-right: 30px;
+    /* justify-content: center; */
     /* position: relative; */
-}
-
-.navbar .social .linked::after {
-    content: "";
-    position: absolute;
-    right: -8px;
-    height: 24px;
-    width: 1px;
-    background-color: gray;
-    transform: translateY(-8%);
-    -webkit-transform: translateY(-8%);
-    -moz-transform: translateY(-8%);
-    -ms-transform: translateY(-8%);
-    -o-transform: translateY(-8%);
 }
 
 /* .navbar .social .login {
@@ -132,6 +118,20 @@ p {
 .navbar .social .linked {
     color: #0a66c2;
     position: relative;
+}
+
+.navbar .social .linked::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    height: 24px;
+    width: 1px;
+    background-color: gray;
+    transform: translateY(-8%);
+    -webkit-transform: translateY(-8%);
+    -moz-transform: translateY(-8%);
+    -ms-transform: translateY(-8%);
+    -o-transform: translateY(-8%);
 }
 
 .Btn {
@@ -214,7 +214,7 @@ p {
 
 /* Start Landing */
 .landing {
-    background-image: url(../imges/mylogo.jpg);
+    background-image: url(../imges/Ecommerce\ web\ page-pana.png);
     background-size: cover;
     height: calc(140vh);
     position: relative;
@@ -386,7 +386,7 @@ p {
 }
 
 .about-links a:hover {
-    color: var(--main-color);
+    color: #0036B1;
 }
 
 /* Contact Section */
@@ -435,6 +435,10 @@ p {
     text-decoration: none;
 }
 
+.contact .info .link:hover {
+    color: #0036B1;
+}
+
 .contact .info .social {
     display: flex;
     justify-content: center;
@@ -453,82 +457,6 @@ p {
     .contact .info .link {
         font-size: 25px;
     }
-}
-
-/* .contact h2 {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-info a {
-    margin-bottom: 0.5rem;
-} */
-
-/* Footer */
-.footer {
-    background-color: #f5f5f5;
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Updated styling for product list items */
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.product {
-    width: 300px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.product h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.product p {
-    margin-bottom: 15px;
-}
-
-.product .price {
-    font-weight: bold;
-    color: #f44336;
-}
-
-.product button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.product button:hover {
-    background-color: #0056b3;
 }
 
 /* footer */
