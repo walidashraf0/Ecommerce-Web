@@ -472,3 +472,63 @@ p {
     font-weight: bold;
     color: var(--main-color);
 }
+
+
+/* Smaller screens */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0; 
+    }
+
+    .navbar .social {
+        margin-right: 10px;
+    }
+
+    .landing .intro-text {
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about h2::before,
+    .about .describtion::after,
+    .contact h2::before {
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .about,
+    .contact {
+        padding: 1rem;
+    }
+
+    .about .describtion,
+    .contact .info {
+        width: 100%;
+    }
+
+    .about-links .des,
+    .about-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .abo-links {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+}
