@@ -22,7 +22,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #007bff;
+    color: var(--main-color);
 }
 
 h2 {
@@ -34,7 +34,7 @@ p {
     margin-bottom: 0.5rem;
 }
 
-/* header */
+/* Header */
 .header {
     background-color: #EDF4FE;
     padding: 24px;
@@ -72,10 +72,6 @@ p {
     font-weight: bold;
     position: absolute;
     transform: translateY(3px);
-    -webkit-transform: translateY(3px);
-    -moz-transform: translateY(3px);
-    -ms-transform: translateY(3px);
-    -o-transform: translateY(3px);
 }
 
 .header .search {
@@ -323,65 +319,7 @@ p {
     font-size: 19px;
     line-height: 1.8;
 }
-
 /* End Landing */
-
-/* Cart Section */
-/* .cart {
-    padding: 2rem;
-    background-color: #f6f6f6;
-}
-
-.cart h2 {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.cart-items {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    width: 900px;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.cart-item img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-
-.cart-item h4 {
-    font-size: 1rem;
-    margin: 0;
-}
-
-.cart-item p {
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-.cart-item button {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-}
-
-.cart-summary {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    width: 200px;
-}
-
-.cart-summary p {
-    margin-bottom: 0.5rem;
-} */
 
 /* About Section */
 .about {
