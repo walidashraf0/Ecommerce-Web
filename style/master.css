@@ -107,7 +107,6 @@ p {
     background-color: blue;
 }
 
-
 /* Navbar */
 .navbar {
     background-color: #f5f5f5;
@@ -134,7 +133,6 @@ p {
 
 .nav-links li {
     margin-right: 20px;
-    /* position: relative; */
 }
 
 .nav-links a {
@@ -144,14 +142,6 @@ p {
     padding: 10px 15px;
     border-radius: 4px;
     transition: 0.3s;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -163,14 +153,7 @@ p {
     display: flex;
     font-size: 18px;
     margin-right: 30px;
-    /* justify-content: center; */
-    /* position: relative; */
 }
-
-/* .navbar .social .login {
-    float: right;
-    margin-left: 20px;
-} */
 
 .navbar .social i {
     margin-left: 25px;
@@ -202,15 +185,11 @@ p {
     width: 1px;
     background-color: gray;
     transform: translateY(-8%);
-    -webkit-transform: translateY(-8%);
-    -moz-transform: translateY(-8%);
-    -ms-transform: translateY(-8%);
-    -o-transform: translateY(-8%);
 }
 
 .Btn {
     display: flex;
-    align-items: center;
+    align-items: centter;
     justify-content: flex-start;
     width: 35px;
     height: 35px;
@@ -223,10 +202,6 @@ p {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
     background-color: var(--main-color);
     transform: translate(20px, -5px);
-    -webkit-transform: translate(20px, -5px);
-    -moz-transform: translate(20px, -5px);
-    -ms-transform: translate(20px, -5px);
-    -o-transform: translate(20px, -5px);
 }
 
 /* plus sign */
@@ -242,10 +217,6 @@ p {
     width: 17px;
     color: white;
     transform: translate(-15px);
-    -webkit-transform: translate(-15px);
-    -moz-transform: translate(-15px);
-    -ms-transform: translate(-15px);
-    -o-transform: translate(-15px);
 }
 
 /* text */
@@ -290,7 +261,7 @@ p {
 .landing {
     background-image: url(../imges/mylogo.jpg);
     background-size: cover;
-    height: calc(140vh);
+    height: calc(100vh);
     position: relative;
 }
 
@@ -299,13 +270,9 @@ p {
     position: absolute;
     width: 320px;
     max-width: 100%;
-    left: 47%;
-    top: 14%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
 }
 
 .landing .intro-text h1 {
@@ -328,7 +295,7 @@ p {
 }
 
 .about h2 {
-    width: 1000px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -343,25 +310,26 @@ p {
     background-color: var(--secondary-color);
     position: absolute;
     bottom: -8px;
-    left: 460px
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .about .describtion {
-    width: 1000px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    /* text-align: center; */
 }
 
 .about .describtion::after {
     content: "";
     position: absolute;
-    width: 700px;
+    width: 70%;
     height: 2px;
     background-color: var(--secondary-color);
     bottom: -20px;
-    left: 120px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .about .describtion p {
@@ -371,7 +339,7 @@ p {
 }
 
 .about-links {
-    width: 1000px;
+    width: 100%;
     margin: 40px auto auto;
 }
 
@@ -384,12 +352,11 @@ p {
 
 .abo-links {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     list-style: none;
     margin: 10px;
     padding: 5px;
 }
-
 
 .about-links li {
     margin-right: 1rem;
@@ -411,7 +378,7 @@ p {
 }
 
 .contact h2 {
-    width: 1000px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -426,7 +393,8 @@ p {
     background-color: var(--secondary-color);
     position: absolute;
     bottom: -8px;
-    left: 448px
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .contact .info {
@@ -468,7 +436,6 @@ p {
 }
 
 @media (max-width: 767px) {
-
     .contact .info .label,
     .contact .info .link {
         font-size: 25px;
@@ -489,9 +456,8 @@ p {
     color: var(--main-color);
 }
 
-
 /* Smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .navbar {
         padding: 1rem;
     }
